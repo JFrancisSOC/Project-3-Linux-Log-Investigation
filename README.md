@@ -56,7 +56,7 @@
 ![Log Directory Exploration](01%20Linux%20Log%20Setup.png)
 
 ### 02 – Viewing Auth Log with Head
-![Viewing Auth Log with Head](screenshots/Project 3 Linux Log Investigation/02 Viewing Auth Log with Head.png)
+![Viewing Auth Log with Head](02%20Viewing%20Auth%20Log%20with%20Head.png)
 
 ### 03 – Viewing Auth Log with Tail
 ![Viewing Auth Log with Tail](03%20Viewing%20Auth.log%20with%20tail.png)
