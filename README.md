@@ -2,78 +2,86 @@
 
 ## Objective
 
-* Develop practical Linux log analysis skills used by Security Operations Center (SOC) analysts by viewing, searching, and interpreting Linux authentication logs within an Ubuntu virtual machine.
+- Build practical skills in Linux log analysis, focusing on reviewing and interpreting authentication logs—an essential task for SOC analysts during incident investigations.
 
 ---
 
 ## Environment
 
-* Ubuntu Desktop LTS
-* Oracle VirtualBox
-* Bash Terminal
+- Ubuntu Desktop LTS
+- Oracle VirtualBox
+- Bash Terminal
 
 ---
 
 ## Skills Practiced
 
-* Navigating Linux log directories
-* Viewing Linux authentication logs
-* Reading log files using `head`
-* Reading log files using `tail`
-* Viewing large log files using `less`
-* Searching log files using `grep`
-* Identifying authentication events
-* Performing basic Linux log analysis
+- Navigating log directories in Linux
+- Viewing and searching Linux authentication logs
+- Using commands like head, tail, less, and grep
+- Identifying normal vs. suspicious login events
+- Analyzing patterns in log files for potential threats
 
 ---
 
 ## Linux Commands Used
 
-| Command                             | Purpose                                         |
-| ----------------------------------- | ----------------------------------------------- |
-| `ls /var/log`                       | Display available Linux log files               |
-| `head /var/log/auth.log`            | View the beginning of the authentication log    |
-| `tail /var/log/auth.log`            | View the most recent authentication log entries |
-| `tail -n 20 /var/log/auth.log`      | Display the last 20 authentication log entries  |
-| `less /var/log/auth.log`            | Scroll through large log files                  |
-| `grep "session" /var/log/auth.log`  | Search for authentication session activity      |
-| `grep "Accepted" /var/log/auth.log` | Search for successful login events              |
+| Command                             | Purpose                                                |
+|-------------------------------------|--------------------------------------------------------|
+| `ls /var/log`                       | List log files in the system directory                 |
+| `head /var/log/auth.log`            | View the beginning of the authentication log           |
+| `tail /var/log/auth.log`            | View the latest entries in the authentication log      |
+| `tail -n 20 /var/log/auth.log`      | Show the last 20 log entries                           |
+| `less /var/log/auth.log`            | Scroll through a large log file interactively          |
+| `grep "session" /var/log/auth.log`  | Search for session-related log entries                 |
+| `grep "Accepted" /var/log/auth.log` | Find successful login attempts                         |
 
 ---
 
 ## Lab Activities
 
-* Explored the Linux `/var/log` directory.
-* Located the `auth.log` authentication log.
-* Used `head` to examine the beginning of the log.
-* Used `tail` to review the newest authentication events.
-* Used `less` to scroll through a large log file.
-* Used `grep` to search for authentication-related events.
-* Reviewed Linux authentication messages to determine whether they represented normal system activity or events requiring additional investigation.
+- Navigated to the `/var/log` directory to explore system logs.
+- Located and examined the `auth.log` file, which records all authentication attempts.
+- Used `head` to see initial log entries.
+- Used `tail` to monitor the most recent authentication attempts.
+- Scrolled through large logs with `less` to spot patterns.
+- Used `grep` to find specific events like successful logins and session activity.
+- Differentiated between normal log entries and suspicious patterns requiring deeper investigation.
 
 ---
 
 ## Screenshots
 
-* P3 01 Linux Log Setup
-* P3 02 Viewing Auth Log with Head
-* P3 03 Viewing Auth Log with Tail
-* P3 04 Searching Auth Log with Grep
-* P3 05 Identifying Successful Logins
-* P3 06 Authentication Activity
+### 01 – Log Directory Exploration
+![Log Directory Exploration](01%20Log%20Directory%20Exploration.png)
+
+### 02 – Viewing Auth Log with Head
+![Viewing Auth Log with Head](02%20Viewing%20Auth%20Log%20with%20Head.png)
+
+### 03 – Viewing Auth Log with Tail
+![Viewing Auth Log with Tail](03%20Viewing%20Auth%20Log%20with%20Tail.png)
+
+### 04 – Scrolling Auth Log with Less
+![Scrolling Auth Log with Less](04%20Scrolling%20Auth%20Log%20with%20Less.png)
+
+### 05 – Searching Auth Log with Grep (Sessions)
+![Searching Auth Log with Grep (Sessions)](05%20Searching%20Auth%20Log%20with%20Grep%20Sessions.png)
+
+### 06 – Searching Auth Log with Grep (Accepted Logins)
+![Searching Auth Log with Grep (Accepted Logins)](06%20Searching%20Auth%20Log%20with%20Grep%20Accepted.png)
 
 ---
 
 ## Lessons Learned
 
-* I learned how Linux stores authentication events inside the `auth.log` file.
-* I practiced using `head`, `tail`, `less`, and `grep` to investigate authentication activity.
-* I learned that not every authentication-related log entry indicates malicious activity and that each event should be reviewed within its proper context.
+- I learned how authentication events are logged in Linux, providing a record of all login attempts.
+- I practiced using tools like head, tail, less, and grep to efficiently sift through large log files.
+- I realized that not every login attempt is suspicious—context matters, and I improved my ability to spot patterns that may indicate a threat.
 
 ---
 
 ## SOC Analyst Takeaways
 
-* Authentication logs are one of the first places SOC analysts look during an investigation.
-* Linux command-line tools make it possible to quickly search and analyze large log files.
-* Reviewing both successful and failed authentication events helps determine whether unauthorized access may have occurred.
+- Reviewing authentication logs is one of the first steps in SOC investigations—these logs help identify unauthorized access attempts.
+- Command-line tools like grep and tail allow you to quickly pinpoint important events, saving time during real incident analysis.
+- Understanding the flow of log entries helps analysts distinguish between normal user behavior and potential security incidents that need further action.
