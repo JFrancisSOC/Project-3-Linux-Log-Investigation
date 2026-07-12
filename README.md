@@ -53,23 +53,22 @@
 ## Screenshots
 
 ### 01 – Log Directory Exploration
-![Log Directory Exploration](01%20Log%20Directory%20Exploration.png)
+![Log Directory Exploration](01%20Linux%20Log%20Setup.png)
 
 ### 02 – Viewing Auth Log with Head
-![Viewing Auth Log with Head](02%20Viewing%20Auth%20Log%20with%20Head.png)
+![Viewing Auth Log with Head](02%20Viewing%20Auth.log.png)
 
 ### 03 – Viewing Auth Log with Tail
-![Viewing Auth Log with Tail](03%20Viewing%20Auth%20Log%20with%20Tail.png)
+![Viewing Auth Log with Tail](03%20Viewing%20Auth.log%20with%20tail.png)
 
-### 04 – Scrolling Auth Log with Less
-![Scrolling Auth Log with Less](04%20Scrolling%20Auth%20Log%20with%20Less.png)
+### 04 – Scrolling Auth Log with Grep
+![Scrolling Auth Log with Grep](04%20Searching%20Auth%20log%20With%20grep.png)
 
-### 05 – Searching Auth Log with Grep (Sessions)
-![Searching Auth Log with Grep (Sessions)](05%20Searching%20Auth%20Log%20with%20Grep%20Sessions.png)
+### 05 – Identifying Successful Logins
+![Identifying Successful Logins](05%20Identifying%20Successful%20Logins.png)
 
-### 06 – Searching Auth Log with Grep (Accepted Logins)
-![Searching Auth Log with Grep (Accepted Logins)](06%20Searching%20Auth%20Log%20with%20Grep%20Accepted.png)
-
+### 06 – Authentication Activity
+![Authentication Activity](06%20Authentication%20Activity.png)
 ---
 
 ## Lessons Learned
